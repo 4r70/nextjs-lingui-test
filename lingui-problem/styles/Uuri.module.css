@@ -1,0 +1,441 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.pealkiriWrapper {
+    width: 65vw;
+    margin-top: 18rem;
+}
+
+.pealkiri {
+    font-size: 3rem;
+    font-size: clamp(3rem, 2.4rem + 3vw, 6rem);
+    font-weight: 800;
+}
+
+.alapealkiri {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+    font-weight: 400;
+    margin-top: 5rem;
+}
+
+.changing {
+    background: var(--em-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.caret {
+    animation: blink 1s steps(1) infinite;
+    background: var(--primary-orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.em {
+    font-style: normal;
+    background: var(--em-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.orange {
+    color: var(--primary-orange);
+    font-style: normal;
+}
+
+@media (prefers-color-scheme: light) {
+    .orange {
+        color: var(--primary-darkorange);
+    }
+}
+
+.noolalla {
+    /* animation: shakeArrow 0.5s 2 ease-in-out; */
+    margin-top: 8rem;
+    align-self: flex-start;
+    margin-left: 17vw;
+}
+
+/* @keyframes shakeArrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(0.5vw);
+    }
+
+    50% {
+        transform: translateY(1vw);
+    }
+
+    75% {
+        transform: translateY(0.5vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+.uus {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    width: 80vw;
+    max-width: 80%;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 1.5rem + 1.25vw, 3rem);
+    align-self: center;
+    text-align: center;
+    width: 40vw;
+    text-shadow: 0px 0px 2rem rgba(255, 168, 0, 0.25);
+}
+
+.uusRowright {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uusRowleft {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uusTextright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1.14rem + 0.30000000000000004vw, 1.5rem);
+    text-align: right;
+    width: 30rem;
+    padding-right: 5rem;
+}
+
+.uusTextleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1.14rem + 0.30000000000000004vw, 1.5rem);
+    text-align: left;
+    width: 30rem;
+    padding-left: 5rem;
+}
+
+.extraButtonLeft {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: var(--primary-orange);
+    border: transparent;
+    color: #000;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    box-shadow: 0px 0.28vw 0.5vw rgba(255, 168, 0, 0.5);
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+}
+
+.extraButtonRight {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: var(--primary-orange);
+    border: transparent;
+    color: #000;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    box-shadow: 0px 0.28vw 0.5vw rgba(255, 168, 0, 0.5);
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+}
+
+.extraButtonLeft:hover, .extraButtonRight:hover {
+    box-shadow: 0px 0.6vw 1.5vw rgba(255, 168, 0, 0.5);
+}
+
+.nool {
+    margin-left: 0.75rem;
+    width: calc(3.25rem - 1vw);
+    min-width: 2rem;
+    height: auto;
+}
+
+.picture {
+    border-radius: 1rem;
+    border: 1px solid var(--primary-orange);
+    box-shadow: 0px 13px 35px 8px rgba(255, 168, 0, 0.25);
+    transition: box-shadow 0.2s ease-in-out;
+    align-self: center;
+    max-width: 70%;
+    height: auto;
+}
+
+.picture:hover {
+    box-shadow: 0px 20px 52px 12px rgba(255, 168, 0, 0.5);
+}
+
+.meie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    width: 80vw;
+    max-width: 80%;
+    margin-bottom: 3rem;
+}
+
+.rowCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.listWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+}
+
+.listLeft {
+    font-size: 1.2rem;
+    word-break: break-word;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding-right: 4.5rem;
+    text-align: right;
+    list-style: none;
+}
+
+.listRight {
+    font-size: 1.2rem;
+    word-break: break-word;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding-left: 4.5rem;
+    text-align: left;
+    list-style: none;
+}
+
+.listName {
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+    font-weight: 700;
+}
+
+.rowTextCenter {
+    margin-top: 3rem;
+    width: 50vw;
+    max-width: 50%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+    font-weight: 400;
+}
+
+.koidab {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koidabTitle {
+    font-size: 3rem;
+    font-size: clamp(3rem, 2.8rem + 1vw, 4rem);
+    align-self: center;
+    text-align: center;
+    width: 40vw;
+    text-shadow: 0px 0px 2rem rgba(255, 168, 0, 0.25);
+    margin: 2rem;
+}
+
+.contact {
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1.14rem + 0.30000000000000004vw, 1.5rem);
+}
+
+.insta {
+    color: var(--primary-orange);
+}
+
+@media (prefers-color-scheme: light) {
+    .insta {
+        color: var(--primary-darkorange);
+    }
+}
+
+@media screen and (max-width: 90rem) {
+    .pealkiriWrapper {
+        margin-top: clamp(15rem, 17rem, 20rem);
+        width: 80vw;
+        max-width: 80%;
+    }
+
+    .noolalla {
+        margin-top: 10rem;
+        margin-left: 10vw;
+    }
+
+    .title {
+        width: 80vw;
+        word-wrap: break-word;
+        text-shadow: 0px 0px 2rem rgba(255, 168, 0, 0.25);
+    }
+
+    .uus {
+        margin-top: 5rem;
+    }
+
+    .uusRowright {
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    .uusTextright {
+        width: 80vw;
+        text-align: left;
+        padding-right: 0;
+        order: 1;
+        align-items: flex-start;
+    }
+
+    .uusRowleft {
+        flex-direction: column;
+    }
+
+    .uusTextleft {
+        width: 80vw;
+        text-align: justify;
+        text-align: left;
+        padding-left: 0;
+        align-items: flex-start;
+    }
+
+    .extraButtonLeft,
+    .extraButtonRight {
+        padding: 0.75rem 1rem 0.75rem 1rem;
+    }
+
+    .nool {
+        max-width: auto;
+        max-height: 1.75rem;
+        margin-left: 0.25rem;
+
+    }
+
+    .picture {
+        width: 80vw;
+        max-width: none;
+        height: auto;
+        order: 0;
+        margin-bottom: 3rem;
+    }
+
+    .meie {
+        margin-top: 5rem;
+    }
+
+    .rowCenter {
+        justify-content: center;
+    }
+
+    .listWrapper {
+        flex-direction: column;
+
+    }
+
+    .listLeft {
+        order: 1;
+        flex-direction: row;
+        line-height: 1.75rem;
+        padding-right: 0;
+        direction: ltr;
+        text-align: left;
+    }
+
+    .listRight {
+        order: 2;
+        flex-direction: row;
+        line-height: 1.75rem;
+        padding-left: 0;
+        direction: rtl;
+        text-align: right;
+        margin-top: 2rem;
+    }
+
+    .rowTextCenter {
+        text-align: center;
+        max-width: 100%;
+        width: 80vw;
+    }
+
+    .koidab {
+        width: 80vw;
+    }
+
+    .koidabTitle {
+        width: 80vw;
+    }
+
+    .contact {
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pealkiriWrapper {
+        margin-top: 15rem;
+        text-align: left;
+    }
+    .title {
+        text-align: left;
+    }
+    .meie > .title {
+        text-align: center;
+    }
+    .noolalla {
+        margin-top: 7rem;
+        margin-left: 10%;
+    }
+}

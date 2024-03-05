@@ -1,0 +1,28 @@
+{
+  "name": "lingui-problem",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "translations:extract": "lingui extract --clean"
+  },
+  "dependencies": {
+    "@builder.io/partytown": "^0.8.0",
+    "@lingui/core": "^4.7.1",
+    "@lingui/react": "^4.7.1",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@lingui/cli": "^4.7.1",
+    "@lingui/loader": "^4.7.1",
+    "@lingui/macro": "^4.7.1",
+    "@lingui/swc-plugin": "^4.0.6",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6"
+  }
+}
