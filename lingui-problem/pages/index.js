@@ -9,7 +9,7 @@ import { useTheme } from '../components/ThemeContext.js';
 import UuriStyles from "../styles/Uuri.module.css";
 
 import { loadCatalog } from "../translations/utils";
-import { Trans, msg } from "@lingui/macro";
+import { Trans, msg, t } from "@lingui/macro";
 import { useLingui } from "@lingui/react";
 
 export default function Uuri() {
@@ -93,7 +93,7 @@ export default function Uuri() {
     return (
         <>
             <Head>
-                <title><Trans>KOIT - Uuri lähemalt</Trans></title>
+                <title>{t`KOIT - Uuri lähemalt`}</title>
                 <meta
                     property="og:title"
                     content="KOIT - Avasta proge ja unusta igavad õppematerjalid."
